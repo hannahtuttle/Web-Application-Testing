@@ -4,7 +4,7 @@ const Display = ({strikes, balls}) => {
 
     return(
         <div>
-            <p> Strikes: {strikes}</p>
+            <p data-testid='strike' > Strikes: {strikes}</p>
             <p> Balls: {balls}</p>
         </div>
     )

@@ -19,13 +19,13 @@ it('renders without crashing using react dom', () => {
 
 it('renders strike', () => {
   const app = render(<App/>)
- app.getAllByText(/strike/i)
+ app.getAllByText(/foul/i)
 
 })
 
 it('renders balls', () => {
   const app = render(<App/>)
- app.getAllByText(/balls/i)
+ app.getAllByText(/hit/i)
 
 })
 })
