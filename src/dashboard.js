@@ -7,7 +7,7 @@ const Dashboard = () => {
     const [strike, setStrike] = useState(0)
     const [balls, setBalls] = useState(0)
     const [outs, setOuts] = useState(0)
-    const [inning, setInning] = useState(1)
+    const [inning, setInning] = useState(0)
     const [hits, setHits] = useState(0)
     const [runs, setRuns] = useState(0)
 
@@ -79,8 +79,8 @@ const Dashboard = () => {
         <div>
             <h1>Home Team</h1>
             <Display strikes={strike} balls={balls}/>
-           <button onClick={handleStrikeClick}>Strike</button>
-           <button onClick={handleBallClick}>ball</button>
+           <button data-testid='strikeBtn' onClick={handleStrikeClick}>Strike</button>
+           <button data-testid='ballBtn' onClick={handleBallClick}>ball</button>
            <button onClick={handleFouls}>foul</button>
            <button onClick={handleHitClick}>hit</button>
            <button onClick={handleBaseOuts}> Got Out on base</button>
